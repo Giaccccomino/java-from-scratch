@@ -16,7 +16,7 @@ jobs:
           java-version: '21'
           cache: maven
       - name: Build and test
-        run: mvn -B verify
+        run: ./mvnw -B verify
 
   examples:
     name: Chapter examples
