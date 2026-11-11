@@ -14,5 +14,6 @@
     <modules>
         <module>projects/aurora</module>
         <module>projects/aurora-gui</module>
+        <module>chapters/chapter-41</module>
     </modules>
 </project>

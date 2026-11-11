@@ -18,6 +18,18 @@ jobs:
       - name: Build and test
         run: mvn -B verify
 
+  examples:
+    name: Chapter examples
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Compile every example
+        run: ./tools/compile-examples.sh
+
   spring:
     name: Spring Boot project (chapter 46)
     runs-on: ubuntu-latest
